@@ -1,0 +1,233 @@
+######### DEFAULT
+
+[colors.bright]
+black = "#747c84"
+blue = "#ae95c7"
+cyan = "#95aec7"
+green = "#95c7ae"
+magenta = "#c795ae"
+red = "#c7ae95"
+white = "#f3f4f5"
+yellow = "#aec795"
+
+[colors.cursor]
+cursor = "#c7ccd1"
+text = "#1c2023"
+
+[colors.normal]
+black = "#1c2023"
+blue = "#ae95c7"
+cyan = "#95aec7"
+green = "#95c7ae"
+magenta = "#c795ae"
+red = "#c7ae95"
+white = "#c7ccd1"
+yellow = "#aec795"
+
+[colors.primary]
+background = "#1c2023"
+foreground = "#c7ccd1"
+
+########### Everforest Dark
+
+# Default colors
+# [colors.primary]
+# background = '#2d353b'
+# foreground = '#d3c6aa'
+
+# # Normal colors
+# [colors.normal]
+# black   = '#475258'
+# red     = '#e67e80'
+# green   = '#a7c080'
+# yellow  = '#dbbc7f'
+# blue    = '#7fbbb3'
+# magenta = '#d699b6'
+# cyan    = '#83c092'
+# white   = '#d3c6aa'
+
+# # Bright colors
+# [colors.bright]
+# black   = '#475258'
+# red     = '#e67e80'
+# green   = '#a7c080'
+# yellow  = '#dbbc7f'
+# blue    = '#7fbbb3'
+# magenta = '#d699b6'
+# cyan    = '#83c092'
+# white   = '#d3c6aa'
+
+#### ROSE PINE DOWN (ligth)
+
+# [colors.primary]
+# background = '#faf4ed'
+# foreground = '#575279'
+
+# [colors.cursor]
+# text = '#575279'
+# cursor = '#cecacd'
+
+# [colors.vi_mode_cursor]
+# text = '#575279'
+# cursor = '#cecacd'
+
+# [colors.selection]
+# text = '#575279'
+# background = '#dfdad9'
+
+# [colors.normal]
+# black = '#f2e9e1'
+# red = '#b4637a'
+# green = '#286983'
+# yellow = '#ea9d34'
+# blue = '#56949f'
+# magenta = '#907aa9'
+# cyan = '#d7827e'
+# white = '#575279'
+
+# [colors.bright]
+# black = '#9893a5'
+# red = '#b4637a'
+# green = '#286983'
+# yellow = '#ea9d34'
+# blue = '#56949f'
+# magenta = '#907aa9'
+# cyan = '#d7827e'
+# white = '#575279'
+
+# [colors.hints]
+# start = { foreground = '#797593', background = '#fffaf3' }
+# end = { foreground = '#9893a5', background = '#fffaf3' }
+
+#### ROSE PINE MOON (dark)
+
+# [colors.primary]
+# background = '#232136'
+# foreground = '#e0def4'
+
+# [colors.cursor]
+# text = '#e0def4'
+# cursor = '#56526e'
+
+# [colors.vi_mode_cursor]
+# text = '#e0def4'
+# cursor = '#56526e'
+
+# [colors.selection]
+# text = '#e0def4'
+# background = '#44415a'
+# [colors.normal]
+# black = '#393552'
+# red = '#eb6f92'
+# green = '#3e8fb0'
+# yellow = '#f6c177'
+# blue = '#9ccfd8'
+# magenta = '#c4a7e7'
+# cyan = '#ea9a97'
+# white = '#e0def4'
+
+# [colors.bright]
+# black = '#6e6a86'
+# red = '#eb6f92'
+# green = '#3e8fb0'
+# yellow = '#f6c177'
+# blue = '#9ccfd8'
+# magenta = '#c4a7e7'
+# cyan = '#ea9a97'
+# white = '#e0def4'
+
+# [colors.hints]
+# start = { foreground = '#908caa', background = '#2a273f' }
+# end = { foreground = '#6e6a86', background = '#2a273f' }
+
+#### ROSE PINE (dark)
+
+# [colors.primary]
+# background = '#191724'
+# foreground = '#e0def4'
+
+# [colors.cursor]
+# text = '#e0def4'
+# cursor = '#524f67'
+
+# [colors.vi_mode_cursor]
+# text = '#e0def4'
+# cursor = '#524f67'
+
+# [colors.selection]
+# text = '#e0def4'
+# background = '#403d52'
+
+# [colors.normal]
+# black = '#26233a'
+# red = '#eb6f92'
+# green = '#31748f'
+# yellow = '#f6c177'
+# blue = '#9ccfd8'
+# magenta = '#c4a7e7'
+# cyan = '#ebbcba'
+# white = '#e0def4'
+
+# [colors.bright]
+# black = '#6e6a86'
+# red = '#eb6f92'
+# green = '#31748f'
+# yellow = '#f6c177'
+# blue = '#9ccfd8'
+# magenta = '#c4a7e7'
+# cyan = '#ebbcba'
+# white = '#e0def4'
+
+# [colors.hints]
+# start = { foreground = '#908caa', background = '#1f1d2e' }
+# end = { foreground = '#6e6a86', background = '#1f1d2e' }
+
+##### UBUNTU
+
+# # 0x Default colors
+# [colors.primary]
+# background = '#300a24'
+# foreground = '#eeeeec'
+
+# # 0x Colors the cursor will use if `custom_cursor_colors` is true
+# [colors.cursor]
+# text = '#bbbbbb'
+# cursor = '#b4d5ff'
+
+# # 0x Normal colors
+# [colors.normal]
+# black   = '#2e3436'
+# red     = '#cc0000'
+# green   = '#4e9a06'
+# yellow  = '#c4a000'
+# blue    = '#3465a4'
+# magenta = '#75507b'
+# cyan    = '#06989a'
+# white   = '#d3d7cf'
+
+# # 0x Bright colors
+# [colors.bright]
+# black   = '#555753'
+# red     = '#ef2929'
+# green   = '#8ae234'
+# yellow  = '#fce94f'
+# blue    = '#729fcf'
+# magenta = '#ad7fa8'
+# cyan    = '#34e2e2'
+# white   = '#eeeeec'
+
+[font]
+normal = { family = "Fira Code", style = "Regular" }
+size = 12
+
+#[keyboard]
+#bindings = [{ action = "Paste", key = "V", mods = "Control" }]
+
+[window]
+decorations = "full"
+dynamic_padding = true
+opacity = 0.9
+
+[window.padding]
+x = 0
+y = 0
