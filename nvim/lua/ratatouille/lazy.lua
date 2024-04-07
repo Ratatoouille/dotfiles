@@ -42,6 +42,9 @@ map('n', '<leader>er', ':NvimTreeRefresh<CR>') -- refresh
 map('n', '<leader>ef', ':NvimTreeFindFileToggle<CR>')
 map('n', '<ESC>', '<cmd>noh<CR>')
 map('n', '[[<leader>bl]]', ':BufferLinePick<CR>')
+map('n', '<leader>gn', ':bn<CR>')
+map('n', '<leader>gp', ':bp<CR>')
+map('n', '<leader>gw', ':Bclose<CR>')
 
 -- , {
 --     import = "ratatouille.plugins.lsp"

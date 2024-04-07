@@ -33,6 +33,8 @@ return {
             }
         })
 
+        telescope.load_extension("file_browser")
+        telescope.load_extension("ui-select")
         telescope.load_extension("fzf")
 
         -- set keymaps
@@ -53,5 +55,6 @@ return {
         keymap.set("n", "<leader>ft", "<cmd>TodoTelescope<cr>", {
             desc = "Find todos"
         })
+        keymap.set("n", "<space>fb", ":Telescope file_browser<CR>")
     end
 }
