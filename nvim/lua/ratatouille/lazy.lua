@@ -8,6 +8,8 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({{
     import = "ratatouille.plugins"
+}, {
+    import = "ratatouille.plugins.lsp"
 }})
 
 require("scope").setup({})
@@ -45,10 +47,6 @@ map('n', '[[<leader>bl]]', ':BufferLinePick<CR>')
 map('n', '<leader>gn', ':bn<CR>')
 map('n', '<leader>gp', ':bp<CR>')
 map('n', '<leader>gw', ':Bclose<CR>')
-
--- , {
---     import = "ratatouille.plugins.lsp"
--- }
 
 -- local lspconfig = require 'lspconfig'
 -- local configs = require 'lspconfig/configs'

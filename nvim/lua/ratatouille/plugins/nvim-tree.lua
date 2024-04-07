@@ -17,15 +17,6 @@ return {
                 dotfiles = true,
                 git_ignored = true
             },
-            -- filesystem = {
-            --     filtered_items = {
-            --         visible = true,
-            --         hide_dotfiles = true,
-            --         hide_gitignored = false,
-            --         hide_by_name = {'.git'},
-            --         never_show = {}
-            --     }
-            -- },
             -- change folder arrow icons
             renderer = {
                 indent_markers = {

@@ -3,7 +3,13 @@ return {
     dependencies = { -- optional packages
     "ray-x/guihua.lua", "neovim/nvim-lspconfig", "nvim-treesitter/nvim-treesitter"},
     config = function()
-        require("go").setup()
+        local capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
+
+        require('go').setup({
+            lsp_cfg = {
+                capabilities = capabilities
+            }
+        })
 
         local format_sync_grp = vim.api.nvim_create_augroup("goimports", {})
         vim.api.nvim_create_autocmd("BufWritePre", {
