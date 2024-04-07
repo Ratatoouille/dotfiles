@@ -9,12 +9,6 @@ return {
         opts = {}
     }},
     config = function()
-        -- import lspconfig plugin
-        local lspconfig = require("lspconfig")
-
-        -- import mason_lspconfig plugin
-        local mason_lspconfig = require("mason-lspconfig")
-
         -- import cmp-nvim-lsp plugin
         local capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
 
@@ -72,62 +66,28 @@ return {
             end
         })
 
-        -- Change the Diagnostic symbols in the sign column (gutter)
-        -- (not in youtube nvim video)
-        local signs = {
-            Error = " ",
-            Warn = " ",
-            Hint = "󰠠 ",
-            Info = " "
-        }
-        for type, icon in pairs(signs) do
-            local hl = "DiagnosticSign" .. type
-            vim.fn.sign_define(hl, {
-                text = icon,
-                texthl = hl,
-                numhl = ""
-            })
-        end
+        local lspconfig = require('lspconfig')
 
-        mason_lspconfig.setup_handlers({
-            -- default handler for installed servers
-            function(server_name)
-                lspconfig[server_name].setup({
-                    capabilities = capabilities
-                })
-            end,
-            ["gopls"] = function()
-                -- configure svelte server
-                lspconfig["gopls"].setup({
-                    capabilities = capabilities,
-                    on_attach = function(client, bufnr)
-                        vim.api.nvim_create_autocmd("BufWritePost", {
-                            pattern = "*.go",
-                            callback = function()
-                                require('go.format').goimports()
-                            end,
-                            group = format_sync_grp
-                        })
-                    end
-                })
-            end,
-            ["lua_ls"] = function()
-                -- configure lua server (with special settings)
-                lspconfig["lua_ls"].setup({
-                    capabilities = capabilities,
-                    settings = {
-                        Lua = {
-                            -- make the language server recognize "vim" global
-                            diagnostics = {
-                                globals = {"vim"}
-                            },
-                            completion = {
-                                callSnippet = "Replace"
-                            }
-                        }
+        -- lspconfig.jsonls.setup {}
+        lspconfig.pyright.setup {}
+        lspconfig.rust_analyzer.setup {}
+        lspconfig.bashls.setup {}
+        lspconfig.sqls.setup {}
+        lspconfig.docker_compose_language_service.setup {}
+        lspconfig.dockerls.setup {}
+        lspconfig.yamlls.setup {}
+        lspconfig.markdown_oxide.setup {}
+        lspconfig.bufls.setup {}
+        lspconfig.gopls.setup {}
+
+        lspconfig.lua_ls.setup({
+            settings = {
+                Lua = {
+                    completion = {
+                        callSnippet = "Replace"
                     }
-                })
-            end
+                }
+            }
         })
     end
 }

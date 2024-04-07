@@ -1,4 +1,3 @@
-local keymap = vim.keymap
 vim.g.mapleader = " "
 
 local opt = vim.opt

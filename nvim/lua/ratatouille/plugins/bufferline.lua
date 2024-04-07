@@ -4,8 +4,14 @@ return {
     version = "*",
     opts = {
         options = {
-            -- mode = "tabs",
-            separator_style = "slant"
+            mode = 'buffers',
+            -- diagnostics = 'coc',
+            offsets = {{
+                filetype = "NvimTree",
+                text = "File Explorer",
+                highlight = "Directory",
+                separator = true
+            }}
         }
     }
 }

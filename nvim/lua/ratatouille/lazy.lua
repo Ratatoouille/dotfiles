@@ -14,18 +14,6 @@ require("lazy").setup({{
 
 require("scope").setup({})
 
-local lspconfig = require('lspconfig')
-lspconfig.pyright.setup {}
-lspconfig.rust_analyzer.setup {}
-lspconfig.bashls.setup {}
-lspconfig.jsonls.setup {}
-lspconfig.sqls.setup {}
-lspconfig.docker_compose_language_service.setup {}
-lspconfig.dockerls.setup {}
-lspconfig.yamlls.setup {}
-lspconfig.markdown_oxide.setup {}
-lspconfig.bufls.setup {}
-
 -- set keymaps
 
 local function map(mode, lhs, rhs, opts)

@@ -20,7 +20,6 @@ return {
             group = format_sync_grp
         })
 
-        require'lspconfig'.gopls.setup {}
     end,
     event = {"CmdlineEnter"},
     ft = {"go", 'gomod'},
