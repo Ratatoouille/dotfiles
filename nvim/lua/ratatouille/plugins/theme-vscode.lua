@@ -8,7 +8,7 @@ return {
             -- style = 'light'
 
             -- Enable transparent background
-            transparent = true,
+            transparent = false,
 
             -- Underline `@markup.link.*` variants
             underline_links = true,

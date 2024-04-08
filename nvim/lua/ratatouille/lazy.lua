@@ -27,6 +27,12 @@ local function map(mode, lhs, rhs, opts)
     vim.api.nvim_set_keymap(mode, lhs, rhs, options)
 end
 
+-- setup theme
+vim.opt.termguicolors = true
+vim.cmd('colorscheme darcula')
+-- darcula
+-- melange
+
 map('n', '<leader>ee', ':NvimTreeToggle<CR>') -- open/close
 map('n', '<leader>er', ':NvimTreeRefresh<CR>') -- refresh
 map('n', '<leader>ef', ':NvimTreeFindFile<CR>')
@@ -34,7 +40,8 @@ map('n', '<ESC>', '<cmd>noh<CR>')
 map('n', '[[<leader>bl]]', ':BufferLinePick<CR>')
 map('n', '<leader>gn', ':bn<CR>')
 map('n', '<leader>gp', ':bp<CR>')
-map('n', '<leader>gw', ':Bclose<CR>')
+map('n', '<leader>gw', ':bw<CR>')
+map('n', '<leader>gd', ':bd<CR>')
 
 vim.keymap.set('n', '<leader>y', '"+y')
 vim.keymap.set('n', '<leader>yy', '"+yy')

@@ -36,7 +36,5 @@ return {
                 light = "lotus"
             }
         }) -- setup must be called before loading
-
-        -- vim.cmd("colorscheme kanagawa")
     end
 }

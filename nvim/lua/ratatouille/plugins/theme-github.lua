@@ -5,11 +5,8 @@ return {
 	config = function()
 		require('github-theme').setup({
 			options = {
-				transparent = true
+				transparent = false
 			}
 		})
-
-		-- github_light_default
-		-- vim.cmd('colorscheme github_dark')
 	end
 }
