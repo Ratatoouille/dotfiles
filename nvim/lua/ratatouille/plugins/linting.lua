@@ -5,8 +5,8 @@ return {
         local lint = require("lint")
 
         lint.linters_by_ft = {
-            markdown = {"markdownlint"},
-            sql = {"sqlfluff"},
+            -- markdown = {"markdownlint"},
+            -- sql = {"sqlfluff"},
             python = {"pylint"},
             json = {"jsonlint"}
         }

@@ -8,7 +8,7 @@ return {
             -- diagnostics = 'coc',
             offsets = {{
                 filetype = "NvimTree",
-                text = "File Explorer",
+                text = "Files",
                 highlight = "Directory",
                 separator = true
             }}

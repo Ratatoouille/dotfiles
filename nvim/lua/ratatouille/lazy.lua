@@ -29,12 +29,22 @@ end
 
 map('n', '<leader>ee', ':NvimTreeToggle<CR>') -- open/close
 map('n', '<leader>er', ':NvimTreeRefresh<CR>') -- refresh
-map('n', '<leader>ef', ':NvimTreeFindFileToggle<CR>')
+map('n', '<leader>ef', ':NvimTreeFindFile<CR>')
 map('n', '<ESC>', '<cmd>noh<CR>')
 map('n', '[[<leader>bl]]', ':BufferLinePick<CR>')
 map('n', '<leader>gn', ':bn<CR>')
 map('n', '<leader>gp', ':bp<CR>')
 map('n', '<leader>gw', ':Bclose<CR>')
+
+vim.keymap.set('n', '<leader>y', '"+y')
+vim.keymap.set('n', '<leader>yy', '"+yy')
+vim.keymap.set('x', '<leader>y', '"+y')
+vim.keymap.set('x', '<leader>yy', '"+yy')
+
+vim.keymap.set('n', '<leader>p', '"+p')
+vim.keymap.set('n', '<leader>pp', '"+pp')
+vim.keymap.set('x', '<leader>p', '"+p')
+vim.keymap.set('x', '<leader>pp', '"+pp')
 
 -- local lspconfig = require 'lspconfig'
 -- local configs = require 'lspconfig/configs'
