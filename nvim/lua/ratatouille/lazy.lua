@@ -12,7 +12,11 @@ require("lazy").setup({{
     import = "ratatouille.plugins.lsp"
 }})
 
-require("scope").setup({})
+-- setup theme
+vim.opt.termguicolors = true
+vim.cmd('colorscheme darcula')
+-- darcula
+-- melange
 
 -- set keymaps
 
@@ -26,12 +30,6 @@ local function map(mode, lhs, rhs, opts)
     end
     vim.api.nvim_set_keymap(mode, lhs, rhs, options)
 end
-
--- setup theme
-vim.opt.termguicolors = true
-vim.cmd('colorscheme darcula')
--- darcula
--- melange
 
 map('n', '<leader>ee', ':NvimTreeToggle<CR>') -- open/close
 map('n', '<leader>er', ':NvimTreeRefresh<CR>') -- refresh
